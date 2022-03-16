@@ -34,7 +34,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
 
-                Articolo a = new Articolo();
+                Articolo a = new Articolo(articoli.Count, lblDescrizione.Text,lblUnitaMisura.Text,Convert.ToDouble(lblPrezzo.Text));
 
                 articoli.Add(a);
                 
