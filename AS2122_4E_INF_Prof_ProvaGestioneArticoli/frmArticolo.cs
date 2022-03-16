@@ -16,9 +16,9 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
         // TODO: (5) aggiungere attributi privati dei dati inseriti nella frmArticoli
         // ...
-        string descrizione;
-        string unitaMisura;
-        double prezzo;
+        string descrizione="";
+        string unitaMisura="";
+        double prezzo=0;
 
 
         public DialogResult Status { get { return status; } }
@@ -43,7 +43,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             unitaMisura = cmbUnitaMisura.Text;
             prezzo = Convert.ToDouble(txtPrezzo.Text);
 
-            if(unitaMisura==" " ||  prezzo==Convert.ToDouble("") || descrizione == " ")
+            if(unitaMisura==" " ||  prezzo==0 || descrizione == " ")
             {
                 MessageBox.Show("Devono essere tutti valorizzati");
             }
